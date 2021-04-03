@@ -1,0 +1,327 @@
+body,
+html {
+    font-size: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h4,
+h4,
+h5,
+h6,
+p,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+.dot {
+    display: block;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin-right: 5px;
+}
+
+#graph {
+    height: 100px;
+    width: 110px;
+
+    & .highcharts-container .highcharts-root .highcharts-background {
+        fill: none;
+    }
+
+    & .highcharts-container .highcharts-root .highcharts-exporting-group,
+    & .highcharts-container .highcharts-root .highcharts-legend,
+    & .highcharts-container .highcharts-root .highcharts-axis-labels,
+    & .highcharts-container .highcharts-root .highcharts-xaxis,
+    & .highcharts-container .highcharts-root .highcharts-grid {
+
+
+        display: none;
+    }
+}
+
+.container {
+    width: 100%;
+    padding: 0 20px;
+}
+
+.header {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+
+    &__back {
+        width: 25px;
+        height: 25px;
+
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+
+    &__options {
+        width: 25px;
+        height: 25px;
+
+        & img {
+            max-width: 100%;
+            height: auto;
+        }
+    }
+}
+
+.card {
+    padding-left: 10px;
+    margin-bottom: 40px;
+    overflow: hidden;
+
+    &__carusel {
+        display: flex;
+        margin-bottom: 15px;
+        transition: transform 0.2s linear;
+
+        &__item {
+            border-radius: 30px;
+            min-width: 85%;
+            margin-right: 10px;
+            opacity: 0.4;
+            transition: opacity 0.2s linear;
+
+            &.active {
+                opacity: 1;
+            }
+
+            &--purple {
+                background: radial-gradient(circle, rgba(255, 62, 127, 1) 0%, rgba(166, 62, 239, 1) 100%);
+            }
+
+            &--pink {
+                background: radial-gradient(circle, rgba(255, 62, 157, 1) 0%, rgba(239, 201, 62, 1) 100%);
+            }
+
+            &--blue {
+                background: radial-gradient(circle, rgba(97, 62, 255, 1) 0%, rgba(62, 238, 239, 1) 100%);
+            }
+
+            &__info {
+                display: flex;
+                justify-content: space-between;
+                padding: 20px;
+                // margin-bottom: 10px;
+
+                &__balance {
+                    &__label {
+                        color: #fff;
+                        font-size: 1.2rem;
+                        opacity: 0.7;
+                    }
+
+                    &__sum {
+                        font-size: 2rem;
+                        color: #fff;
+                        font-weight: 500;
+                    }
+                }
+
+                &__type {
+                    max-width: 55px;
+                    max-height: 40px;
+
+                    & img {
+                        margin-top: -10px;
+                        width: 100%;
+                        max-width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+
+            &__number {
+                padding: 0 20px;
+                display: flex;
+                margin-bottom: 30px;
+
+                &__item {
+                    font-size: 1.6rem;
+                    color: #fff;
+                    display: flex;
+                    align-items: center;
+                    font-weight: 500;
+
+
+
+
+                    &__span {
+                        margin-right: 15px;
+                        align-items: center;
+                        display: flex;
+                    }
+
+                }
+
+            }
+
+            &__date {
+                padding: 0 20px 10px 20px;
+                font-size: 1.3rem;
+                font-weight: 300;
+                color: #fff;
+            }
+        }
+    }
+
+    &__pointer {
+        display: flex;
+        justify-content: center;
+
+        &__item {
+            width: 5px;
+            height: 5px;
+            background-color: #ccc;
+            margin-right: 5px;
+            border-radius: 50%;
+            opacity: 0.5;
+            transition: all 0.2s linear;
+
+            &.active {
+                opacity: 1;
+                width: 15px;
+                border-radius: 5px;
+            }
+        }
+    }
+}
+
+
+.types {
+    display: flex;
+    padding-left: 10px;
+    margin-bottom: 30px;
+
+
+    &__item {
+        margin-right: 40px;
+        font-size: 1.6rem;
+        font-weight: 600;
+        opacity: 0.3;
+
+        &:last-child {
+            margin-right: 0;
+        }
+
+        &.active {
+            opacity: 1;
+        }
+    }
+}
+
+.month {
+    margin: 0 10px 30px 10px;
+    padding: 10px;
+    background-color: #f5f6f8;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    &__info {
+
+        &__name {
+            color: #b9babd;
+            font-size: 1.4rem;
+            font-weight: 400;
+        }
+
+        &__changes {
+            color: #000;
+            font-size: 1.8rem;
+            font-weight: 600;
+        }
+    }
+
+    &__graph {
+        padding: 12px 5px;
+        background-color: #000;
+        color: #fff;
+        display: flex;
+        height: 50px;
+        overflow: hidden;
+
+        border-radius: 10px;
+
+        &__item {
+            margin: -5px 5px 0 -50px;
+        }
+
+        &__label {
+            margin-top: 5px;
+            font-size: 1.2rem;
+        }
+    }
+}
+
+.spending {
+
+    margin: 0 10px;
+    // padding: 0 10px;
+
+    &__item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 20px;
+
+        &__info {
+            display: flex;
+            align-items: center;
+
+            &__logo {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 50px;
+                height: 50px;
+                border-radius: 10px;
+                background-color: #f5f6f8;
+                margin-right: 15px;
+
+                & img {
+                    max-width: 45%;
+                    height: auto;
+                }
+            }
+
+            &__description {
+                &__name {
+                    font-weight: 700;
+                    font-size: 1.2rem;
+                }
+
+                &__percent {
+                    color: #c4c5c7;
+                    font-weight: 400;
+                    font-size: 1.1rem;
+                }
+            }
+        }
+
+        &__sum {
+            color: #000;
+            font-size: 1.4rem;
+            font-weight: 700;
+        }
+    }
+}

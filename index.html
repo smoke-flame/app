@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>App</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header__back">
+          <img src="assets/img/back-arrow.svg" alt="arrow" />
+        </div>
+        <div class="header__options">
+          <img src="assets/img/three-small-dots.svg" alt="dots" />
+        </div>
+      </header>
+
+      <div class="card">
+        <div class="card__carusel">
+          <div class="card__carusel__item card__carusel__item--purple active">
+            <div class="card__carusel__item__info">
+              <div class="card__carusel__item__info__balance">
+                <div class="card__carusel__item__info__balance__label">
+                  Total balance
+                </div>
+                <div class="card__carusel__item__info__balance__sum">
+                  $ 35.323.05
+                </div>
+              </div>
+              <div class="card__carusel__item__info__type">
+                <img src="assets/img/visa.svg" alt="visa" />
+              </div>
+            </div>
+            <div class="card__carusel__item__number">
+              <p class="card__carusel__item__number__item">
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                4849
+              </p>
+            </div>
+
+            <div class="card__carusel__item__date">22/12/2020</div>
+          </div>
+          <div class="card__carusel__item card__carusel__item--pink">
+            <div class="card__carusel__item__info">
+              <div class="card__carusel__item__info__balance">
+                <div class="card__carusel__item__info__balance__label">
+                  Total balance
+                </div>
+                <div class="card__carusel__item__info__balance__sum">
+                  $ 35.323.05
+                </div>
+              </div>
+              <div class="card__carusel__item__info__type">
+                <img src="assets/img/visa.svg" alt="visa" />
+              </div>
+            </div>
+            <div class="card__carusel__item__number">
+              <p class="card__carusel__item__number__item">
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                4849
+              </p>
+            </div>
+
+            <div class="card__carusel__item__date">22/12/2020</div>
+          </div>
+          <div class="card__carusel__item card__carusel__item--blue">
+            <div class="card__carusel__item__info">
+              <div class="card__carusel__item__info__balance">
+                <div class="card__carusel__item__info__balance__label">
+                  Total balance
+                </div>
+                <div class="card__carusel__item__info__balance__sum">
+                  $ 35.323.05
+                </div>
+              </div>
+              <div class="card__carusel__item__info__type">
+                <img src="assets/img/visa.svg" alt="visa" />
+              </div>
+            </div>
+            <div class="card__carusel__item__number">
+              <p class="card__carusel__item__number__item">
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                <span class="card__carusel__item__number__item__span"
+                  ><span class="dot"></span class="dot"><span class="dot"></span><span class="dot"></span><span class="dot"></span 
+                ></span>
+                4849
+              </p>
+            </div>
+
+            <div class="card__carusel__item__date">22/12/2020</div>
+          </div>
+        </div>
+
+        <div class="card__pointer">
+          <div class="card__pointer__item active"></div>
+          <div class="card__pointer__item"></div>
+          <div class="card__pointer__item"></div>
+        </div>
+      </div>
+
+      <div class="types">
+        <div class="types__item active">Expenses</div>
+        <div class="types__item">Incomimg</div>
+      </div>
+
+      <div class="month">
+
+        <div class="month__info">
+          <div class="month__info__name">July</div>
+          <div class="month__info__changes"> - $13.456</div>
+        </div>
+        <div class="month__graph">
+          <div class="month__graph__item">
+            <div id="graph"></div>
+          </div>
+          <div class="month__graph__label">Details</div>
+        </div>
+      </div>
+
+      <div class="spending">
+        <div class="spending__item">
+          <div class="spending__item__info">
+            <div class="spending__item__info__logo">
+              <img src="assets/img/home.svg" alt="home">
+            </div>
+            <div class="spending__item__info__description">
+              <div class="spending__item__info__description__name">Rent</div>
+              <div class="spending__item__info__description__percent">51%</div>
+            </div>
+          </div>
+          
+          <div class="spending__item__sum">- $7.800</div>
+        </div>
+
+        <div class="spending__item">
+          <div class="spending__item__info">
+            <div class="spending__item__info__logo">
+              <img src="assets/img/light-bulb.svg" alt="light">
+            </div>
+            <div class="spending__item__info__description">
+              <div class="spending__item__info__description__name">Utilities</div>
+              <div class="spending__item__info__description__percent">19%</div>
+            </div>
+          </div>
+          
+          <div class="spending__item__sum">- $916</div>
+        </div>
+
+        <div class="spending__item">
+          <div class="spending__item__info">
+            <div class="spending__item__info__logo">
+              <img src="assets/img/dress-long-and-black-shape.svg" alt="dress">
+            </div>
+            <div class="spending__item__info__description">
+              <div class="spending__item__info__description__name">Clothing</div>
+              <div class="spending__item__info__description__percent">16%</div>
+            </div>
+          </div>
+          
+          <div class="spending__item__sum">- $850</div>
+        </div>
+
+        <div class="spending__item">
+          <div class="spending__item__info">
+            <div class="spending__item__info__logo">
+              <img src="assets/img/restaurant.svg" alt="restaurant">
+            </div>
+            <div class="spending__item__info__description">
+              <div class="spending__item__info__description__name">Food</div>
+              <div class="spending__item__info__description__percent">10%</div>
+            </div>
+          </div>
+          
+          <div class="spending__item__sum">- $570</div>
+        </div>
+
+        <div class="spending__item">
+          <div class="spending__item__info">
+            <div class="spending__item__info__logo">
+              <img src="assets/img/car.svg" alt="car">
+            </div>
+            <div class="spending__item__info__description">
+              <div class="spending__item__info__description__name">Car</div>
+              <div class="spending__item__info__description__percent">8%</div>
+            </div>
+          </div>
+          
+          <div class="spending__item__sum">- $500</div>
+        </div>
+      </div>
+    </div>
+
+    
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/data.js"></script>
+    <script src="https://code.highcharts.com/modules/drilldown.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="assets/js/graph.js"></script>
+    <script src="assets/js/slider.js"></script>
+  </body>
+</html>
